@@ -1,0 +1,31 @@
+<form name="order" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="success.html">
+  <input type="hidden" name="form-name" value="order">
+  
+  <!-- Honeypot -->
+  <p style="display:none;">
+    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+  </p>
+
+  <label>Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Phone:</label>
+  <input type="text" name="phone" required>
+
+  <label>Quantity:</label>
+  <input type="number" name="quantity" required>
+
+  <label>Product:</label>
+  <select name="product" required>
+    <option value="">-- Select --</option>
+    <option value="Pencil Holder">Pencil Holder</option>
+    <option value="Checkers Board">Checkers Board</option>
+    <option value="Plant Pots">Plant Pots</option>
+  </select>
+
+  <br><br>
+  <button type="submit">Submit</button>
+</form>
